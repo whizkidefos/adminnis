@@ -3,7 +3,7 @@ import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 
-import Sidebar from './scenes/global/Sidebar';
+import Sidenav from './scenes/global/Sidenav';
 
 import Bar from './scenes/bar';
 import Calendar from './scenes/calendar';
@@ -26,7 +26,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <Sidebar />
+          <Sidenav />
           <main className="content">
             <Topbar />
             <Routes>
